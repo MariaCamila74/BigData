@@ -254,9 +254,15 @@ try:
             # No se toma en cuenta las cabeceras de descripción de las columnas
             # ---------------------------------------------------------------------
             if (contador_registros > 0):
+                if len(fila) < 5:
+                    print(f"Fila ignorada por columnas incompletas -> {fila}")
+                    contador_registros += 1
+                    continue
+            
                 # -----------------------------------------------------------------
                 # fila[col_1] = Segunda o siguiente fila, tupla o registro de la hoja de cálculo
                 # -----------------------------------------------------------------                
+            
                 nombre_region = fila[col_nom_reg]
                 codigo_region = getCodigoRegion(nombre_region)  
                 # ---------------------------------------------------------------------                
