@@ -74,3 +74,17 @@ CREATE TABLE IF NOT EXISTS public.tamanio(
     cantidad integer DEFAULT 0,
     estado character varying(1)
 );
+
+-- Regiones
+INSERT INTO regiones (id_region, nombre_region) 
+VALUES
+    (1, 'Region Eje Cafetero - Antioquia'),
+    (2, 'Region Centro Oriente'),
+    (3, 'Region Centro Sur'),
+    (4, 'Region Caribe'),
+    (5, 'Region Llano'),
+    (6, 'Region Pacifico');
+
+-- Alterar tabla public.operaciones
+ALTER TABLE public.operaciones
+ADD id_region INT REFERENCES regiones(id_region);
