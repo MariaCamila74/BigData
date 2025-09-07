@@ -23,6 +23,14 @@ CREATE TABLE IF NOT EXISTS public.departamentos(
     CONSTRAINT departamentos_pkey PRIMARY KEY (id_departamento)
 );
 
+-- Table: public.regiones
+-- DROP TABLE IF EXIST public.regiones;
+CREATE TABLE IF NOT EXIST public.regiones(
+    id_region integer NOT NULL,
+    nombre_region character varying(70) COLLATE pg_catalog."default" NOT NULL,
+    CONSTRAINT regiones_pkey PRIMARY KEY (id_region)
+);
+
 -- DROP TABLE IF EXISTS public.municipios;
 CREATE TABLE IF NOT EXISTS public.municipios(
     id_departamento integer NOT NULL,
@@ -76,15 +84,11 @@ CREATE TABLE IF NOT EXISTS public.tamanio(
 );
 
 -- Regiones
-INSERT INTO regiones (id_region, nombre_region) 
-VALUES
+INSERT INTO public.regiones (id_region, nombre_region) VALUES
     (1, 'Region Eje Cafetero - Antioquia'),
     (2, 'Region Centro Oriente'),
     (3, 'Region Centro Sur'),
     (4, 'Region Caribe'),
     (5, 'Region Llano'),
-    (6, 'Region Pacifico');
-
--- Alterar tabla public.operaciones
-ALTER TABLE public.operaciones
-ADD id_region INT REFERENCES regiones(id_region);
+    (6, 'Region Pacifico')
+ON CONFLICT (id_region) DO NOTHING;

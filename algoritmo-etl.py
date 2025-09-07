@@ -166,6 +166,7 @@ def cargarMunicipio(conn, cursor, contador, codigo_dep, codigo_mun, municipio):
         return    
     # Fin función cargarMunicipio
 
+
          
 # --------------------------------------------------------------------------
 # INICIO DEL PROGRAMA
@@ -362,8 +363,15 @@ try:
         codigo_old = codigo_dep
         #
         cargarMunicipio(connection, cursor, contador, codigo_dep, codigo_mun, municipio) 
-    # -------------------------------------------------------------------------        
+    # -------------------------------------------------------------------------  
 
+
+
+    # -------------------------------------------------------------------------
+    # REGIONES        
+    # -------------------------------------------------------------------------
+
+    
     # -------------------------------------------------------------------------
     connection.commit()
     connection.close()    
@@ -377,3 +385,4 @@ finally:
         
 print("Fin del proceso ETL")
 # Fin del algoritmo
+
