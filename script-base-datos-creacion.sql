@@ -92,3 +92,4 @@ INSERT INTO public.regiones (id_region, nombre_region) VALUES
     (5, 'Region Llano'),
     (6, 'Region Pacifico')
 ON CONFLICT (id_region) DO NOTHING;
+
