@@ -10,7 +10,7 @@ SELECT
 FROM operaciones O, departamentos D, municipios M, Productos p
 WHERE D.id_departamento = O.id_departamento
 AND O.id_municipio = M.id_municipio
-AND M.id_producto = P.id_producto
+AND O.id_producto = P.id_producto
 GROUP BY D.nombre
 ORDER BY monto_total DESC LIMIT 8;
 */
@@ -28,11 +28,11 @@ ORDER BY monto_total DESC LIMIT 8;
 /*
 SELECT 
     M.nombre AS municipio,
-    SUM(ope.cantidad) AS total_vendidos
+    SUM(O.cantidad) AS total_vendidos
 FROM operaciones O, departamentos D, municipios M, productos P
 WHERE D.id_departamento = O.id_departamento
 AND M.id_municipio = O.id_municipio
-AND M.id_producto = P.id_producto
+AND O.id_producto = P.id_producto
 AND D.nombre = 'Antioquia'
 GROUP BY M.nombre
 ORDER BY total_vendidos DESC
@@ -61,7 +61,7 @@ FROM operaciones O, departamentos D, municipios M, Productos p
 WHERE D.id_departamento = O.id_departamento
 AND M.id_municipio = O.id_municipio
 AND P.id_producto = O.id_producto
-WHERE P.nombre = 'MANZALOCA'
+AND P.nombre = 'MANZALOCA'
 GROUP BY D.nombre
 ORDER BY total_vendidas DESC
 LIMIT 5;
@@ -91,7 +91,7 @@ FROM operaciones O, departamentos D, municipios M, productos P
 WHERE D.id_departamento = O.id_departamento
 AND M.id_municipio = O.id_municipio
 AND P.id_producto = O.id_producto
-WHERE P.nombre = 'MANZALOCA'   
+AND P.nombre = 'MANZALOCA'   
 GROUP BY D.nombre, M.nombre
 ORDER BY monto_total ASC
 LIMIT 5;
@@ -112,6 +112,45 @@ LIMIT 5;
 --7.5
 
 --Consulta sin usar la vista
+/*
+SELECT R.nombre_region, P.nombre, SUM(O.cantidad) AS total_vendido
+FROM operaciones O, productos P, regiones R
+WHERE P.id_producto = O.id_producto
+AND R.id_region = O.id_region
+GROUP BY R.nombre_region, P.nombre
+ORDER BY total_vendido DESC;
+*/
 
+--Consulta usando la vista
 
+SELECT
+    region,
+    producto,
+    SUM(cantidad) AS total_vendido
+FROM vista_operaciones
+GROUP BY region, producto
+ORDER BY total_vendido DESC;
 
+--7.6
+
+--Consulta sin usar la vista
+
+/*
+SELECT P.nombre, SUM(O.cantidad * P.precio) AS total_ventas
+FROM operaciones O, productos P, departamentos D
+WHERE P.id_producto = O.id_producto
+AND D.id_departamento = O.id_departamento
+AND D.nombre = 'Antioquia'
+GROUP BY P.nombre
+ORDER BY total_ventas DESC;
+*/
+
+--Consulta usando la vista
+
+SELECT 
+    producto,
+    SUM(venta) AS total_ventas
+FROM vista_operaciones
+WHERE departamento = 'Antioquia'
+GROUP BY producto
+ORDER BY total_ventas DESC;
