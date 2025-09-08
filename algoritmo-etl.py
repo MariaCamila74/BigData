@@ -51,7 +51,7 @@ v_host	   = "localhost"
 v_port	   = "5432"
 v_database = "bigdata"
 v_user	   = "postgres"
-v_password = "postgres"
+v_password = "12345"
 
 #-----------------------------------------------------------------------------
 # Función: Obtener número de código de Región
