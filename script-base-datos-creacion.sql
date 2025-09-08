@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS public.departamentos(
 
 -- Table: public.regiones
 -- DROP TABLE IF EXIST public.regiones;
-CREATE TABLE IF NOT EXIST public.regiones(
+CREATE TABLE IF NOT EXISTS public.regiones(
     id_region integer NOT NULL,
     nombre_region character varying(70) COLLATE pg_catalog."default" NOT NULL,
     CONSTRAINT regiones_pkey PRIMARY KEY (id_region)
