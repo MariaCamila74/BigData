@@ -1,4 +1,4 @@
-# Somos el Grupo #7 🌟  
+# Somos el Grupo #7 🌟
   
 - **MARIA CAMILA ORTIZ** 💾  
 - **JUAN DAVID GARCÍA VARGAS**🔧  
@@ -21,7 +21,7 @@ Cargar datos transformados en tablas de departamentos, municipios y productos.
 
 Este espacio muestra descripciones de estructuras de datos, ajustes en flujos de trabajo y representaciones gráficas de resultados. Todo esto enmarcado en un esfuerzo grupal para resolver problemas prácticas eficientemente.  
   
-## Contenido del Repositorio 📂  
+## Contenido del Repositorio 📂
   
 - **Informe Principal** 📄: Una visión general de nuestras actividades y conclusiones.  
 - **Scripts y Algoritmos** </>👨🏻‍💻: Elementos para manejar y refinar información.  
