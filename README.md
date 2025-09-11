@@ -23,6 +23,6 @@ Este espacio muestra descripciones de estructuras de datos, ajustes en flujos de
 
 **Contenido del Repositorio**
   
-- **Informe Principal** 📄: Una visión general de nuestras actividades y conclusiones.  
-- **Scripts y Algoritmos** </>👨🏻‍💻: Elementos para manejar y refinar información.  
-- **Video de Sustentación** 🎥: Enlace a un recorrido por nuestro proceso.
+- **Informe Principal**: Una visión general de nuestras actividades y conclusiones.  
+- **Scripts y Algoritmos**: Elementos para manejar y refinar información.  
+- **Video de Sustentación**: Enlace a un recorrido por nuestro proceso.
