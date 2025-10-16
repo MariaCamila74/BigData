@@ -1,28 +1,128 @@
-**Somos el Grupo #7**
-  
-- **MARIA CAMILA ORTIZ** 
-- **JUAN DAVID GARCÍA VARGAS**
-- **JAIME DAVID RESTREPO RODRÍGUEZ**  
-- **ALEXANDER VARGAS MEJÍA** 
-  
-**Descripción**
-  
-ETL/ELT - Solución de un problema de Big data a través de un proceso ETL/ELT
-El crecimiento de la información a través de Big Data y el Internet de las Cosas requiere que el desarrollador de software esté capacitado en la gestión de datos de todo tipo y de grandes volúmenes de estos, dada su variedad actual (hojas de cálculo, audios, videos, archivos planos, sensores, bases de datos, entre otros). Es necesario que en todo proyecto estemos familiarizados con una serie de elementos fundamentales, entre ellos:  
+<p align="center">
+  <img src="https://wallpapercave.com/wp/wp2393629.jpg" alt="Team 7 Banner" width="800">
+</p>
 
-**Extracción:**  
-Extraer datos de libro de excel con registros de regiones, departamentos, municipios y códigos DANE.  
+# 🌀 Proyecto Big Data – Equipo 7
 
-**Transformación (Transformation):**  
-Manipular datos para adaptarlos a una base relacional.  
+> **"El conocimiento no es poder, sino la capacidad de transformarlo en acción."**
 
-**Carga (Load):** 
-Cargar datos transformados en tablas de departamentos, municipios y productos.  
+---
 
-Este espacio muestra descripciones de estructuras de datos, ajustes en flujos de trabajo y representaciones gráficas de resultados. Todo esto enmarcado en un esfuerzo grupal para resolver problemas prácticas eficientemente.  
+## 👥 Integrantes del Equipo 7
+- **Maria Camila Ortiz**
+- **Juan David García Vargas**
+- **Jaime David Restrepo Rodríguez**
+- **Alexander Vargas Mejía**
 
-**Contenido del Repositorio**
-  
-- **Informe Principal**: Una visión general de nuestras actividades y conclusiones.  
-- **Scripts y Algoritmos**: Elementos para manejar y refinar información.  
-- **Video de Sustentación**: Enlace a un recorrido por nuestro proceso.
+---
+
+## 🧠 Descripción del Proyecto
+
+Este repositorio contiene el desarrollo del **proyecto de Big Data – Proceso ETL/ELT**, enfocado en el manejo, transformación y análisis de grandes volúmenes de información provenientes de diversas fuentes.
+
+El objetivo principal es demostrar la aplicación práctica de las fases **Extracción**, **Transformación** y **Carga** (ETL) en un entorno de Big Data, optimizando la gestión de datos y su integración a sistemas relacionales.
+
+---
+
+## ⚙️ Fases del Proyecto
+
+### 🔹 1. Extracción (Extract)
+Se obtiene información desde un archivo **Excel** que contiene registros de:
+- Regiones  
+- Departamentos  
+- Municipios  
+- Códigos DANE  
+
+### 🔹 2. Transformación (Transform)
+Los datos son **procesados y limpiados** para adaptarse a un modelo de base de datos relacional.  
+Incluye:
+- Normalización de nombres  
+- Eliminación de duplicados  
+- Validación de códigos  
+- Generación de llaves foráneas  
+
+### 🔹 3. Carga (Load)
+La información transformada se **inserta en tablas** diseñadas para optimizar consultas y análisis, garantizando la integridad de los datos.
+
+---
+
+## 📁 Estructura del Repositorio
+
+BigData/
+├── TAREA-2/
+│ ├── Graficos/ # Visualizaciones y resultados
+│ ├── Informe/ # Informe + enlace a video
+│ ├── Proceso_ETL/ # Código Python y scripts SQL base
+│ └── Scripts/ # SQL de limpieza, validación y consultas
+│
+├── TAREA-4/
+│ ├── CMI.xlsx # Cuadro de Mando Integral
+│ ├── GRAFICOS DE METRICAS...xlsx # Métricas y KPIs visualizados
+│ ├── operaciones-2023.sql # Datos base de operaciones
+│ ├── script-base-datos-vista-new.sql # Nuevas vistas y métricas
+│ └── et0155-g100-tarea-04-informe-v2.docx # Informe final
+│
+└── README.md
+
+---
+
+## 📜 Informes y sustentación
+
+- **Informe Tarea 2:**  
+  `/TAREA-2/Informe/bigdata-et0155-tarea-ETL-v2-informe-equipo_7.docx`
+
+- **Informe Tarea 4:**  
+  `/TAREA-4/et0155-g100-tarea-04-equipo_7-informe-v2.docx`
+
+---
+
+## 🧰 Tecnologías Utilizadas
+
+| Herramienta | Descripción |
+|--------------|-------------|
+| **Python** | Lenguaje base para procesamiento de datos |
+| **Pandas** | Manipulación y transformación de datasets |
+| **Excel / CSV** | Fuentes de datos iniciales |
+| **PostgreSQL / SQLite** | Bases de datos relacionales |
+
+---
+
+## 🧩 Instalación y Ejecución
+
+### 🔧 Requisitos Previos
+Asegúrate de tener instalado:
+- **Python 3.10+**
+- **PostgreSQL**
+- **pip**
+
+---
+
+## 📊 Resultados y Visualizaciones
+
+El proyecto incluye gráficos representativos y tableros que permiten visualizar:
+- Distribución de municipios por departamento  
+- Frecuencias de registros  
+- Comparaciones por región  
+
+---
+
+## 🧩 Conclusiones
+
+- El proceso ETL permite estructurar datos dispersos en información útil.  
+- Las herramientas de Big Data facilitan la gestión eficiente de grandes volúmenes de datos.  
+- La colaboración en equipo potencia la calidad y profundidad del análisis.  
+
+---
+
+## 🌀 Licencia
+Este proyecto fue desarrollado con fines **académicos**.  
+Derechos reservados © Equipo 7 – 2025
+
+---
+## 🏁 Estado del proyecto
+✅ Tarea 2 completada  
+✅ Tarea 4 completada  
+
+<p align="center">
+  <img src="https://i.pinimg.com/originals/d9/0b/f1/d90bf1c9f2c1b2a5b6613d3555e1b090.gif" alt="Team 7" width="400">
+</p>
