@@ -29,6 +29,7 @@ https://www.datos.gov.co/Mapas-Nacionales/Departamentos-y-municipios-de-Colombia
 # Paquetes y librerías
 #-------------------------------------------------------------------------
 import time
+import os
 import sys
 import re
 import random
@@ -226,7 +227,8 @@ try:
     #   codigo_municipio    = row[3] - Cuarta  columna
     #   municipio           = row[4] - Quinta  columna
     #---------------------------------------------------------------------------------
-    archivo_fisico = 'colombia-dane-departamentos.csv'
+    ruta_actual = os.path.dirname(os.path.abspath(__file__))
+    archivo_fisico = os.path.join(ruta_actual, 'colombia-dane-departamentos.csv')
 
     # ---------------------------------------------------------------------------------
     # Recorrido/Lectura de los registros de la hoja de cálculo

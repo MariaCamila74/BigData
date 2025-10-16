@@ -12,7 +12,7 @@ WITH promedios AS (
     GROUP BY id_municipio
 )
 UPDATE operaciones o
-SET cantidad = p.prom,
+SET cantidad = p.prom
 FROM promedios p
 WHERE o.id_municipio = p.id_municipio
   AND o.cantidad = 0;

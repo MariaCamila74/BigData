@@ -16,9 +16,10 @@ CREATE OR REPLACE VIEW public.vista_operaciones_new
     ope.estado,
     reg.id_region,
     reg.nombre_region
-   FROM (((operaciones ope
+   FROM ((((operaciones ope
      JOIN departamentos dep ON ((dep.id_departamento = ope.id_departamento)))
      JOIN municipios mun ON ((mun.id_municipio = ope.id_municipio)))
      JOIN productos pro ON ((pro.id_producto = ope.id_producto)))
-     JOIN regiones reg ON ((reg.id_region = ope.id_region))
+     JOIN regiones reg ON ((reg.id_region = ope.id_region)))
   ORDER BY dep.nombre, mun.nombre, pro.nombre, reg.nombre_region;
+  
