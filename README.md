@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://wallpapercave.com/wp/wp2393629.jpg" alt="Team 7 Banner" width="800">
+  <img src="[https://wallpapercave.com/wp/wp2393629.jpg](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F2p5b16qqdynb1.png)" alt="Team 7 Banner" width="800">
 </p>
 
 # 🌀 Proyecto Big Data – Equipo 7
