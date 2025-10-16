@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F2p5b16qqdynb1.png" alt="Team 7 Banner" width="800">
+  <img src="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-abstract-digital-background-big-data-visualization-network-connection-structure-science-background-image_435050.jpg" alt="Team 7 Banner" width="800">
 </p>
 
 # 🌀 Proyecto Big Data – Equipo 7
