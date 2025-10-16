@@ -46,26 +46,6 @@ La información transformada se **inserta en tablas** diseñadas para optimizar 
 
 ---
 
-## 📁 Estructura del Repositorio
-
-BigData/
-├── TAREA-2/
-│ ├── Graficos/ # Visualizaciones y resultados
-│ ├── Informe/ # Informe + enlace a video
-│ ├── Proceso_ETL/ # Código Python y scripts SQL base
-│ └── Scripts/ # SQL de limpieza, validación y consultas
-│
-├── TAREA-4/
-│ ├── CMI.xlsx # Cuadro de Mando Integral
-│ ├── GRAFICOS DE METRICAS...xlsx # Métricas y KPIs visualizados
-│ ├── operaciones-2023.sql # Datos base de operaciones
-│ ├── script-base-datos-vista-new.sql # Nuevas vistas y métricas
-│ └── et0155-g100-tarea-04-informe-v2.docx # Informe final
-│
-└── README.md
-
----
-
 ## 📜 Informes y sustentación
 
 - **Informe Tarea 2:**  
