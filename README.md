@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://wallpapercave.com/wp/wp2393629.jpg" alt="Team 7 Banner" width="800">
+  <img src="https://png.pngtree.com/thumb_back/fh260/background/20201026/pngtree-abstract-digital-background-big-data-visualization-network-connection-structure-science-background-image_435050.jpg" alt="Team 7 Banner" width="800">
 </p>
 
 # 🌀 Proyecto Big Data – Equipo 7
@@ -43,26 +43,6 @@ Incluye:
 
 ### 🔹 3. Carga (Load)
 La información transformada se **inserta en tablas** diseñadas para optimizar consultas y análisis, garantizando la integridad de los datos.
-
----
-
-## 📁 Estructura del Repositorio
-
-BigData/
-├── TAREA-2/
-│ ├── Graficos/ # Visualizaciones y resultados
-│ ├── Informe/ # Informe + enlace a video
-│ ├── Proceso_ETL/ # Código Python y scripts SQL base
-│ └── Scripts/ # SQL de limpieza, validación y consultas
-│
-├── TAREA-4/
-│ ├── CMI.xlsx # Cuadro de Mando Integral
-│ ├── GRAFICOS DE METRICAS...xlsx # Métricas y KPIs visualizados
-│ ├── operaciones-2023.sql # Datos base de operaciones
-│ ├── script-base-datos-vista-new.sql # Nuevas vistas y métricas
-│ └── et0155-g100-tarea-04-informe-v2.docx # Informe final
-│
-└── README.md
 
 ---
 
